@@ -1,5 +1,7 @@
 package com.example.portals.core
 
+import java.util.UUID
+
 class Portal(
     key: String,
     items: List<PortalItem>,
@@ -7,7 +9,7 @@ class Portal(
 )
 
 class PortalItem(
-
+    val id : UUID
 )
 
 sealed class Swipe : Event {
